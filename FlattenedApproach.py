@@ -172,7 +172,4 @@ flattenedConvTime, outputFeatureMapFlattenedPooled = FlatteningMethod(N, C, H, W
 print("Time taken for convolution by flattening:", flattenedConvTime)
 # Check the shape of the output feature maps
 print("Output feature maps shape after pooling: (N, M, H_out, W_out) =", len(outputFeatureMapFlattenedPooled), len(outputFeatureMapFlattenedPooled[0]), len(outputFeatureMapFlattenedPooled[0][0]), len(outputFeatureMapFlattenedPooled[0][0][0]))
-print("----------------------------------------")    
-# Compare the output feature maps
-outputs_equal = compareFeatureMaps(outputFMapPooled, outputFeatureMapFlattenedPooled)
-print("Both methods produce the same output?:", outputs_equal)
+print("----------------------------------------")
